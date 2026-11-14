@@ -7,6 +7,7 @@ import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { authService, AuthError } from '../../services/authService';
 import { isValidEmail } from '../../utils/validation';
 import type { AppRoute, AuthSession } from '../../types/agrolynx';
+import satelliteOrbitImage from '../../assets/images/feature_satellite_orbit_1794663660801.jpg';
 
 interface AuthViewsProps {
   mode: 'login' | 'register' | 'recover';
@@ -199,7 +200,7 @@ export const AuthViews: React.FC<AuthViewsProps> = ({
         <div className="relative z-10 space-y-4">
           <div className="aspect-[16/9] rounded-xl overflow-hidden border border-navy-700">
             <ImageWithFallback
-              src="/src/assets/images/feature_satellite_orbit_1794663660801.jpg"
+              src={satelliteOrbitImage}
               alt="Satélite de observação agrícola"
               className="w-full h-full object-cover"
               fallbackTitle="AGROLYNX Orbital"
