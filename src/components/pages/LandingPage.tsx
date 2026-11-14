@@ -13,6 +13,9 @@ import { Button } from '../ui/Button';
 import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { INTEGRATION_SPECS } from '../../services/contracts/dataSources';
 import type { AppRoute } from '../../types/agrolynx';
+import heroFarmImage from '../../assets/images/hero_agrolynx_farm_1794663660779.jpg';
+import satelliteOrbitImage from '../../assets/images/feature_satellite_orbit_1794663660801.jpg';
+import soilAgronomyImage from '../../assets/images/feature_soil_agronomy_1794663663327.jpg';
 
 interface LandingPageProps {
   onNavigate: (route: AppRoute) => void;
@@ -199,7 +202,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="lg:col-span-6">
               <div className="h-full min-h-[300px] lg:min-h-[420px] rounded-xl overflow-hidden border border-slate-200 bg-navy-900">
                 <ImageWithFallback
-                  src="/src/assets/images/hero_agrolynx_farm_1794663660779.jpg"
+                  src={heroFarmImage}
                   alt="Vista aérea de lavoura agrícola brasileira com linhas de plantio e pivô central de irrigação"
                   className="w-full h-full object-cover"
                   fallbackTitle="AGROLYNX — Agricultura de Precisão"
@@ -248,7 +251,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="lg:col-span-7 border border-slate-200 rounded-xl overflow-hidden bg-white flex flex-col">
               <div className="aspect-[16/9] bg-navy-900 overflow-hidden">
                 <ImageWithFallback
-                  src="/src/assets/images/feature_satellite_orbit_1794663660801.jpg"
+                  src={satelliteOrbitImage}
                   alt="Ilustração científica de satélite de observação da Terra mapeando talhões agrícolas"
                   className="w-full h-full object-cover"
                   fallbackTitle="Observação Orbital"
@@ -270,7 +273,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="lg:col-span-5 border border-slate-200 rounded-xl overflow-hidden bg-white flex flex-col">
               <div className="aspect-[4/3] bg-slate-100 overflow-hidden">
                 <ImageWithFallback
-                  src="/src/assets/images/feature_soil_agronomy_1794663663327.jpg"
+                  src={soilAgronomyImage}
                   alt="Inspeção agronômica de amostra de solo em lavoura de soja"
                   className="w-full h-full object-cover"
                   fallbackTitle="Análise de Solo e Agronomia"
