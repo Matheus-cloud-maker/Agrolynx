@@ -459,7 +459,7 @@ const CMR_PRODUCT_DEFINITIONS: Record<
     shortNames: ['HLSS30_VI', 'HLSL30_VI', 'HLSS30', 'HLSL30'],
     spatialResolution: '30 m × 30 m',
     temporalResolution: '2 a 5 dias',
-    authRequirement: 'Catálogo CMR público; extração/download via NASA AppEEARS (HLSS30_VI.020 / HLSL30_VI.020).',
+    authRequirement: 'Catálogo CMR público; extração/download via NASA AppEEARS (HLSS30_VI.002 / HLSL30_VI.002).',
   },
   modis_ndvi_evi: {
     label: 'MODIS MOD13Q1 / MYD13Q1 (NDVI / EVI)',
@@ -1631,7 +1631,7 @@ export function createApp() {
 
     if (fnUpper.includes('HLSS30') || fnUpper.includes('HLSL30') || task.product.toUpperCase().includes('HLS')) {
       const isS30 = fnUpper.includes('HLSS30');
-      const prod = isS30 ? 'HLSS30_VI.020' : fnUpper.includes('HLSL30') ? 'HLSL30_VI.020' : task.product;
+      const prod = isS30 ? 'HLSS30_VI.002' : fnUpper.includes('HLSL30') ? 'HLSL30_VI.002' : task.product;
       const sensorName = isS30 ? 'NASA HLS S30 (Sentinel-2)' : fnUpper.includes('HLSL30') ? 'NASA HLS L30 (Landsat 8/9)' : 'NASA HLS L30/S30';
       const sensorKey: OrbitalSensorCategory = dsLower.includes('evi') ? 'evi' : 'ndvi';
       return {
