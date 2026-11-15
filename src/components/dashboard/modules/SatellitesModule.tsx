@@ -86,11 +86,11 @@ const ORBITAL_INTEGRATIONS: IntegrationCardConfig[] = [
     title: 'NDVI — NASA HLS L30/S30',
     sensorLabel: 'Harmonized Landsat 8/9 & Sentinel-2',
     profileKey: 'hls_ndvi',
-    product: 'HLSS30_VI.020',
+    product: 'HLSS30_VI.002',
     layers: ['NDVI'],
     layerSpecs: [
-      { product: 'HLSS30_VI.020', layer: 'NDVI' },
-      { product: 'HLSL30_VI.020', layer: 'NDVI' },
+      { product: 'HLSS30_VI.002', layer: 'NDVI' },
+      { product: 'HLSL30_VI.002', layer: 'NDVI' },
     ],
     resolution: '30 m × 30 m · 2–5 dias',
     alternateLabel: 'Alternativa MODIS (250 m)',
@@ -104,11 +104,11 @@ const ORBITAL_INTEGRATIONS: IntegrationCardConfig[] = [
     title: 'EVI — NASA HLS L30/S30 & MODIS',
     sensorLabel: 'Realçado para dossel denso (LP DAAC)',
     profileKey: 'hls_evi',
-    product: 'HLSS30_VI.020',
+    product: 'HLSS30_VI.002',
     layers: ['EVI'],
     layerSpecs: [
-      { product: 'HLSS30_VI.020', layer: 'EVI' },
-      { product: 'HLSL30_VI.020', layer: 'EVI' },
+      { product: 'HLSS30_VI.002', layer: 'EVI' },
+      { product: 'HLSL30_VI.002', layer: 'EVI' },
     ],
     resolution: '30 m (HLS) / 250 m (MOD13Q1)',
     alternateLabel: 'Extrair MODIS EVI (250 m)',
@@ -1549,11 +1549,11 @@ export const SatellitesModule: React.FC<SatellitesModuleProps> = ({
                           handleSubmitExtraction({
                             key: 'spec_btn',
                             profileKey: 'hls_ndvi',
-                            product: 'HLSS30_VI.020',
+                            product: 'HLSS30_VI.002',
                             layers: ['NDVI'],
                             layerSpecs: [
-                              { product: 'HLSS30_VI.020', layer: 'NDVI' },
-                              { product: 'HLSL30_VI.020', layer: 'NDVI' },
+                              { product: 'HLSS30_VI.002', layer: 'NDVI' },
+                              { product: 'HLSL30_VI.002', layer: 'NDVI' },
                             ],
                           });
                         }
